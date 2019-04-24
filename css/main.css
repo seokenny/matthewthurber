@@ -1,0 +1,106 @@
+* {
+    color:white;
+    font-family:"Tahoma";
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin:unset;
+    padding:unset;
+}
+
+ul {
+    list-style-type:none;
+}
+
+.wt_center {
+	/**Start of vertical/horizontal centering**/
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	/**End of vertical/horizontal centering**/
+	text-align:center;
+	width:100%;
+	letter-spacing:0.1em;
+}
+
+#content_contain {
+    background-color:#F14242;
+    height:calc(100vh - 50px);
+    margin-top:50px;
+    width:100%;
+    position:relative;
+}
+
+/**NAVIGATION**/
+.mobile_nav {
+    background-color:white;
+    height:50px;
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index:20;
+}
+
+.mobile_nav_button {
+    width:unset;
+    left:92.5%;
+}
+
+.burger_menu_line1, .burger_menu_line2, .burger_menu_line3 {
+    background-color:#F14242;
+    height:5px;
+    margin-top:2.5px;
+    margin-bottom:2.5px;
+    border-radius:100px;
+}
+
+.burger_menu_line1 {
+    width:30px;
+}
+
+.burger_menu_line2 {
+    width:20px;
+    margin-left:10px;
+}
+
+.burger_menu_line3 {
+    width:10px;
+    margin-left:20px;
+}
+
+.mobile_nav_menu {
+    height:100vh;
+    width:100%;
+    background-color:black;
+    position:fixed;
+    z-index:30;
+    top:0;
+}
+
+/**ABOUT ME**/
+.page_contain {
+    width:100%;
+    background-color:#F14242;
+}
+
+.page_contain_text {
+    width:85%;
+    margin-left:7.5%;
+}
+
+.para_text {
+    font-size:3.5vw;
+    line-height:5vw;
+    margin-top:2.5em;
+    letter-spacing:0.2em;
+}
+
+/**MISC**/
+.page_title {
+    font-family:"Sue Ellen Francisco";
+}
+
+.hidden {
+    display:none;
+}
