@@ -109,6 +109,36 @@ ul {
     margin-top:30px;
 }
 
+/**ARTWORK**/
+.art_tile {
+    width:100%;
+    padding-top:100%;
+    /* margin-left:7.5%; */
+    margin-top:10px;
+    background-color:white;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.at_0 {
+    background-image:url("../images/paint0.jpg");
+}
+.at_1 {
+    background-image:url("../images/paint1.jpg");
+}
+.at_2 {
+    background-image:url("../images/paint2.jpg");
+}
+.at_3 {
+    background-image:url("../images/paint3.jpg");
+}
+.at_4 {
+    background-image:url("../images/paint4.jpg");
+}
+.at_5 {
+    background-image:url("../images/paint5.jpg");
+}
+
 /**MISC**/
 .page_title {
     font-family:"Sue Ellen Francisco";
@@ -116,4 +146,16 @@ ul {
 
 .hidden {
     display:none;
+}
+
+
+/**MEDIA QUERIES**/
+@media only screen and (min-width:768px){
+    .art_tile {
+        width:33.33333%;
+        padding-top:33.33333%;
+        margin-left:unset;
+        margin-top:unset;
+        float:left;
+    }
 }
