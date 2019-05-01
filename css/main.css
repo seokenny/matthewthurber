@@ -1,5 +1,4 @@
 * {
-    color:white;
     font-family:"Tahoma";
 }
 
@@ -25,7 +24,6 @@ ul {
 }
 
 #content_contain {
-    background-color:#F14242;
     height:calc(100vh - 50px);
     margin-top:50px;
     width:100%;
@@ -44,11 +42,13 @@ ul {
 
 .mobile_nav_button {
     width:unset;
-    left:92.5%;
+    right:0;
+    left:unset;
 }
 
 .burger_menu_line1, .burger_menu_line2, .burger_menu_line3 {
-    background-color:#F14242;
+    /* background-color:#F14242; */
+    background-color:black;
     height:5px;
     margin-top:2.5px;
     margin-bottom:2.5px;
@@ -76,12 +76,23 @@ ul {
     position:fixed;
     z-index:30;
     top:0;
+    white-space:pre-line;
+    color:white;
+}
+
+.mobile_nav_menu li {
+    font-family:"Sue Ellen Francisco";
+    font-size:5vw;
+    margin-top:15px;
+    margin-bottom:15px;
+    cursor:pointer;
+    display:inline-block;
 }
 
 /**ABOUT ME**/
 .page_contain {
     width:100%;
-    background-color:#F14242;
+    /* background-color:#F14242; */
 }
 
 .page_contain_text {
@@ -92,9 +103,28 @@ ul {
 
 .para_text {
     font-size:3.5vw;
-    line-height:5vw;
+    line-height:1.5rem;
     margin-top:2.5em;
-    letter-spacing:0.2em;
+    letter-spacing:0.01em;
+}
+
+/**POTLATCH**/
+.pli {
+    width:100%;
+}
+
+.para_text_flip {
+    margin-top:unset;
+    margin-bottom:2.5em;
+    font-size:2.5vw;
+}
+
+.para_text_btmmargin {
+    margin-bottom:2.5em;
+}
+
+.para_text_btmpadding {
+    padding-bottom:2.5em;
 }
 
 /**AMBERGRIS**/
@@ -113,8 +143,6 @@ ul {
 .art_tile {
     width:100%;
     padding-top:100%;
-    /* margin-left:7.5%; */
-    margin-top:10px;
     background-color:white;
     background-size:cover;
     background-repeat:no-repeat;
@@ -178,5 +206,21 @@ ul {
         margin-left:unset;
         margin-top:unset;
         float:left;
+    }
+    .para_text {
+        font-size:.9rem;
+    }
+    .page_contain_text {
+        text-align:left;
+    }
+}
+
+@media only screen and (min-width:1080px){
+    .art_tile {
+        width:20%;
+        padding-top:20%;
+    }
+    .page_contain_text {
+        width:917px;
     }
 }
