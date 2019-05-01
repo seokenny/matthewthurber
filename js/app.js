@@ -14,6 +14,7 @@ document.querySelector(".mobile_nav_menu").addEventListener("click",function(){
 document.querySelector(".m_home").addEventListener("click",function(){
     aboutContainOut();
     projectsContainOut();
+    artworkContainOut();
     potlatchContainOut();
     ambergrisContainOut();
     bioContainOut();
@@ -25,6 +26,7 @@ document.querySelector(".m_home").addEventListener("click",function(){
 document.querySelector(".m_about").addEventListener("click",function(){
     bannerNameOut();
     projectsContainOut();
+    artworkContainOut();
     potlatchContainOut();
     ambergrisContainOut();
     bioContainOut();
@@ -36,6 +38,7 @@ document.querySelector(".m_about").addEventListener("click",function(){
 document.querySelector(".m_projects").addEventListener("click",function(){
     bannerNameOut();
     aboutContainOut();
+    artworkContainOut();
     potlatchContainOut();
     ambergrisContainOut();
     bioContainOut();
@@ -43,11 +46,24 @@ document.querySelector(".m_projects").addEventListener("click",function(){
     projectsContainIn();
 });
 
+//ARTWORKS
+document.querySelector(".m_artwork").addEventListener("click",function(){
+    bannerNameOut();
+    aboutContainOut();
+    projectsContainOut();
+    potlatchContainOut();
+    ambergrisContainOut();
+    bioContainOut();
+    pressContainOut();
+    artworkContainIn();
+});
+
 //POTLATCH
 document.querySelector(".m_potlatch").addEventListener("click",function(){
     bannerNameOut();
     aboutContainOut();
     projectsContainOut();
+    artworkContainOut();
     ambergrisContainOut();
     bioContainOut();
     pressContainOut();
@@ -59,6 +75,7 @@ document.querySelector(".m_ambergris").addEventListener("click",function(){
     bannerNameOut();
     aboutContainOut();
     projectsContainOut();
+    artworkContainOut();
     potlatchContainOut();
     bioContainOut();
     pressContainOut();
@@ -81,6 +98,7 @@ document.querySelector(".m_press").addEventListener("click",function(){
     bannerNameOut();
     aboutContainOut();
     projectsContainOut();
+    artworkContainOut();
     potlatchContainOut();
     ambergrisContainOut();
     bioContainOut();
@@ -124,6 +142,18 @@ function projectsContainIn(){
     document.querySelector(".projects_contain").classList.add("fadeIn");
     document.querySelector(".projects_contain").classList.remove("fadeOut");
     document.querySelector(".projects_contain").classList.remove("hidden");
+}
+
+//artworkContain functions
+function artworkContainOut(){
+    document.querySelector(".artwork_contain").classList.add("fadeOut");
+    document.querySelector(".artwork_contain").classList.add("hidden");
+}
+
+function artworkContainIn(){
+    document.querySelector(".artwork_contain").classList.add("fadeIn");
+    document.querySelector(".artwork_contain").classList.remove("fadeOut");
+    document.querySelector(".artwork_contain").classList.remove("hidden");
 }
 
 //potlatchContain functions
